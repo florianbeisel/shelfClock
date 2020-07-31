@@ -135,6 +135,8 @@ void changeManualBrightness()
 
         case (uint8_t)BrightnessLevel::low:
             clockLightState = LightState::off;
+            stripClock.clear();
+            stripClock.show();
             break;
 
         default:
